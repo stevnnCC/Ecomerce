@@ -1,0 +1,331 @@
+:root {
+    --yellow: rgb(241, 172, 42);;  
+
+}
+
+      body {
+        font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+        color: #333;
+    }
+
+   
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2); 
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    backdrop-filter: blur(10px); 
+    padding: 10px 20px;
+    color: white !important;
+    border-radius: 20px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 80%;
+}
+
+
+.logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.logo h1{
+    font-size: 0.8rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  
+    align-items: center;
+  
+}
+
+.nav-right a{
+    text-decoration: none;
+    color: black;
+}
+    
+.nav-right a:hover{
+    color: var(--yellow);
+}
+
+    .product-page {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 20px;
+        min-height: 500px;
+        background-color: white;
+    }
+    
+    
+    .product-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: white;
+        border-radius: 12px;
+   
+        padding: 30px;
+        width: 80%;
+        max-width: 1200px;
+        box-sizing: border-box;
+    }
+    
+   
+    .product-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        max-height: 450px;
+        object-fit: cover;
+    }
+    
+    .product-info {
+        flex: 1;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+
+    .product-title {
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+    
+   
+    .product-description {
+        font-size: 1.1rem;
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    
+  
+    .product-price {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: var(--yellow);
+        margin-bottom: 20px;
+    }
+    
+    .discount-price {
+        font-size: 1.4rem;
+        color: #777;
+        text-decoration: line-through;
+        margin-left: 15px;
+    }
+    
+    
+    .product-quantity {
+        margin-bottom: 25px;
+        font-size: 1.1rem;
+    }
+    
+    .product-quantity label {
+        font-weight: 500;
+        color: #333;
+        margin-right: 10px;
+    }
+    
+    .product-quantity input {
+        width: 80px;
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    
+    .product-rating {
+        font-size: 1.2rem;
+        color:  var(--yellow);
+        margin-bottom: 25px;
+    }
+    .product-rating span:nth-child(2){
+        font-size: 0.8rem;
+    }
+    .product-rating span {
+        margin-right: 10px;
+    }
+    
+    /* Button Styles */
+    .product-buttons {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+    }
+   
+    button {
+        padding: 12px 20px;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+    }
+    
+   
+    .btn-add-to-cart {
+        background-color:  var(--yellow);
+        color: white;
+        font-weight: 600;
+    }
+    
+    .btn-add-to-cart:hover {
+        background-color: #d85e14;
+    }
+    
+    .btn-buy-now {
+        background-color: #333; 
+        color: white;
+        font-weight: 600;
+    }
+    
+    .btn-buy-now:hover {
+        background-color: #6d6b6b;
+    }
+
+   
+.footer {
+    text-align: center;
+    background: var(--yellow);
+    color: white;
+    padding: 20px;
+    margin-top: 200px;
+}
+.reviews-section {
+    width: 80%;
+    max-width: 1000px;
+    margin: 60px auto 0;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 12px;
+
+}
+
+.reviews-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+    font-size: 1.8rem;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    gap: 5px;
+}
+.review-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.review-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--yellow);
+}
+
+.review-content {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    flex: 1;
+}
+
+.review-name {
+    font-size: 1rem;
+    margin: 0 0 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.review-text {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
+}
+.comment-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+}
+
+.comment-section h1{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.comment-section a{
+    text-decoration: none;
+    color: var(--yellow);
+}
+
+.comment-section a:hover{
+   color:  rgb(207, 149, 40);; 
+}
+@media (max-width: 768px) {
+    .review {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .review-avatar {
+        margin-bottom: 10px;
+    }
+
+    .review-profile{
+
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .product-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+ }  
